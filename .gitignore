@@ -1,0 +1,14 @@
+# Dữ liệu gốc (~2,6 GB, 59.867 file) — tải từ Figshare 10.6084/m9.figshare.29925314
+/datasets
+/datasets.zip
+
+# Sản phẩm sinh ra khi chạy notebook: cache tín hiệu (~2,2 GB) + checkpoint (~62 MB).
+# Sinh lại được bằng cách chạy notebook, không commit.
+/outputs
+**/cache
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
