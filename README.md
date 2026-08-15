@@ -32,6 +32,7 @@ ca OMI (37%) nằm trong nhóm NSTEMI** — mạch tắc hoàn toàn nhưng tiê
 | [`notebooks/07_omi_median_beat.ipynb`](notebooks/07_omi_median_beat.ipynb) | OMI — **cùng 11 kiến trúc, đổi input sang nhịp trung bình `.med` 12×500**, so cặp raw ↔ median trên cùng tập validation |
 | [`notebooks/08_stemi_stability_calibration.ipynb`](notebooks/08_stemi_stability_calibration.ipynb) | STEMI — **5-fold theo bệnh nhân** cho 3 ứng viên đầu bảng, kiểm định ghép cặp, so khớp ngưỡng ở cùng Specificity, hiệu chuẩn cross-fit, bootstrap CI cho ngưỡng 3 mức |
 | [`notebooks/09_omi_stability_calibration.ipynb`](notebooks/09_omi_stability_calibration.ipynb) | OMI — như `08`, ứng viên `PlainCNN` / `TCN1D` / `ResNet1D` |
+| [`notebooks/10_classical_ml_comparison.ipynb`](notebooks/10_classical_ml_comparison.ipynb) | STEMI + OMI — đặc trưng lâm sàng (`neurokit2`) + Logistic Regression/Random Forest/XGBoost, so ghép cặp với deep learning (`08`/`09`) trên cùng 5-fold, chạy CPU không cần GPU |
 
 Các notebook so sánh dùng **cùng pipeline, cùng split, cùng seed** nên chênh lệch phản ánh kiến trúc
 chứ không phải may rủi dữ liệu — nhưng vẫn là **một** lần chia và **một** seed, nên thứ hạng giữa các
